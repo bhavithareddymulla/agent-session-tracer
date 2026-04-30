@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Message channel for STDM Research components to communicate session selection</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>The selected session ID</description>
+        <fieldName>sessionId</fieldName>
+    </lightningMessageFields>
+    <masterLabel>STDM Session Channel</masterLabel>
+</LightningMessageChannel>

@@ -1,0 +1,94 @@
+/* Filter Container */
+.filter-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: end;
+    background: linear-gradient(to right, #f7fafc, #edf2f7);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.filter-item {
+    min-width: 0;
+}
+
+.agent-selector {
+    grid-column: 1 / -1;
+}
+
+.button-group {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Error Banner */
+.error-banner {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: #feded8;
+    border-left: 4px solid #c23934;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    color: #c23934;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Results Section */
+.results-section {
+    margin-top: 1.5rem;
+}
+
+.results-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 0.5rem 0.5rem 0 0;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.results-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.table-container {
+    padding: 0;
+}
+
+/* Custom Datatable Styling */
+.session-id-cell {
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+    color: #667eea;
+}
+
+.table-container {
+    background: white;
+    border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Remove all responsive breakpoints - same layout everywhere */
+
+/* Loading State */
+lightning-spinner {
+    margin: 2rem auto;
+}
+
+/* Table Enhancements */
+lightning-datatable {
+    --slds-c-datatable-cell-spacing-block-start: 0.75rem;
+    --slds-c-datatable-cell-spacing-block-end: 0.75rem;
+}
